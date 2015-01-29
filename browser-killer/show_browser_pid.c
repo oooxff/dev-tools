@@ -41,6 +41,8 @@ int main(int argc, char *argv[])
     while(fgets(buffer, sizeof(buffer), fp) != NULL) {
         if (! strncmp(buffer, "Browser", 7)) {
             show_browser_pid(buffer);
+        } else if (! strncmp(buffer, "CastApp", 7)) {
+            show_browser_pid(buffer);
         }
     }
 
